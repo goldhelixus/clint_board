@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_2nd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_2nd" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_ay"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_ay" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_b"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_b" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_baka"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_baka" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_blind"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_blind" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_bruh"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_bruh" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_c"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_c" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_chep"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_chep" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_cozy"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_cozy" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_d"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_d" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_fug"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_fug" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_g"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_g" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_gachi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_gachi" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_gasm"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_gasm" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_good"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_good" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_hands"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_hands" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_hard"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_hard" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_hd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    android:onClick="playHD"
+                    app:srcCompat="@drawable/clint_hd" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_hi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_hi" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_hypers"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_hypers" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_iq"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_iq" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_l"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_l" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_lewd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_lewd" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_love"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_love" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_lu"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_lu" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_nerd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_nerd" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_no"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_no" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_o"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_o" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_oh"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_oh" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_p"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_p" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_peng"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_peng" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_god_peng"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_god_peng" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_rare_peng"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_rare_peng" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_r"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_r" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_re"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_re" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_s"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/clint_s" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_smug"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_smug" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_soft"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_soft" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_suave"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_suave" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_t"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_t" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_thot"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_thot" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_v"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_v" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_w"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_w" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_weeb"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_weeb" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_x"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round_unused"
+                    app:srcCompat="@drawable/clint_x" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_yo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_round"
+                    app:srcCompat="@drawable/clint_yo" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
