@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer clint_hands = MediaPlayer.create(this, R.raw.clint_hands);
         final MediaPlayer clint_fug = MediaPlayer.create(this, R.raw.clint_fug);
         final MediaPlayer clint_hypers = MediaPlayer.create(this, R.raw.clint_hypers);
+        final MediaPlayer clint_gachi = MediaPlayer.create(this, R.raw.clint_gachi);
+        final MediaPlayer clint_soft = MediaPlayer.create(this, R.raw.clint_soft);
+        final MediaPlayer clint_x = MediaPlayer.create(this, R.raw.clint_x);
+        final MediaPlayer clint_2nd = MediaPlayer.create(this, R.raw.clint_2nd);
 
         ImageButton imageButtoniq = (ImageButton) this.findViewById(R.id.imageButton_iq);
         ImageButton imageButtonr = (ImageButton) this.findViewById(R.id.imageButton_r);
@@ -47,7 +51,35 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imageButtonhands = (ImageButton) this.findViewById(R.id.imageButton_hands);
         ImageButton imageButtonfug = (ImageButton) this.findViewById(R.id.imageButton_fug);
         ImageButton imageButtonhypers = (ImageButton) this.findViewById(R.id.imageButton_hypers);
+        ImageButton imageButtongachi = (ImageButton) this.findViewById(R.id.imageButton_gachi);
+        ImageButton imageButtonsoft = (ImageButton) this.findViewById(R.id.imageButton_soft);
+        ImageButton imageButtonx = (ImageButton) this.findViewById(R.id.imageButton_x);
+        ImageButton imageButton2nd = (ImageButton) this.findViewById(R.id.imageButton_2nd);
 
+        imageButton2nd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clint_2nd.start();
+            }
+        });
+        imageButtonx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clint_x.start();
+            }
+        });
+        imageButtonsoft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clint_soft.start();
+            }
+        });
+        imageButtongachi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clint_gachi.start();
+            }
+        });
         imageButtonhypers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

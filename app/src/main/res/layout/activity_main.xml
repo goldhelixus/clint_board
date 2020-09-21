@@ -17,7 +17,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:gravity="center"
             android:orientation="vertical"
@@ -38,7 +38,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_round_unused"
+                    android:background="@drawable/button_round"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:srcCompat="@drawable/clint_2nd" />
@@ -178,7 +178,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_round_unused"
+                    android:background="@drawable/button_round"
                     app:srcCompat="@drawable/clint_gachi" />
 
                 <ImageButton
@@ -459,7 +459,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_round_unused"
+                    android:background="@drawable/button_round"
                     app:srcCompat="@drawable/clint_soft" />
 
                 <ImageButton
@@ -534,7 +534,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_round_unused"
+                    android:background="@drawable/button_round"
                     app:srcCompat="@drawable/clint_x" />
 
             </LinearLayout>
