@@ -397,7 +397,9 @@ public class MainActivity extends AppCompatActivity {
     // Function that stops all the current sounds
 
     public void stopSound(View v) {
-        clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_2nd);
-        clint_sound.stop();
+        if(clint_sound != null && clint_sound.isPlaying())  {
+            clint_sound.stop();
+        }
+
     }
 }
