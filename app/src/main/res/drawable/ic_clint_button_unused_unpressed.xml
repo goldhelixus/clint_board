@@ -30,7 +30,7 @@
           android:endY="0"
           android:endX="82"
           android:type="linear">
-        <item android:offset="0" android:color="#FFB23939"/>
+        <item android:offset="0" android:color="#FFCC3333"/>
         <item android:offset="1" android:color="#FFC45151"/>
         <item android:offset="1" android:color="#FFB24747"/>
       </gradient>
