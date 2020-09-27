@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imageButtonoh = this.findViewById(R.id.imageButton_oh);
         ImageButton imageButtonv = this.findViewById(R.id.imageButton_v);
         ImageButton imageButtonno = this.findViewById(R.id.imageButton_no);
+        ImageButton imageButtonlewd = this.findViewById(R.id.imageButton_lewd);
 
         /*
             On Click Listeners that have nested On Completion Listener
@@ -52,10 +53,28 @@ public class MainActivity extends AppCompatActivity {
             the audio to the MediaPlayer and play. This makes it so we
             don't have to have a separate function to remount MediaPlayers.
         */
+        imageButtonlewd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
+                    clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_lewd);
+                            clint_sound.start();
+                        }
+                    });
+                } else {
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_lewd);
+                    clint_sound.start();
+
+                }
+            }
+        });
         imageButtonno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -63,8 +82,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_no);
                     clint_sound.start();
 
@@ -74,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -82,8 +100,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_v);
                     clint_sound.start();
 
@@ -93,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonoh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -101,8 +118,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_oh);
                     clint_sound.start();
 
@@ -112,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -120,8 +136,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_t);
                     clint_sound.start();
                 }
@@ -130,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton2nd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -138,8 +153,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_2nd);
                     clint_sound.start();
                 }
@@ -148,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -156,8 +170,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_x);
                     clint_sound.start();
                 }
@@ -166,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonsoft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -174,8 +187,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_soft);
                     clint_sound.start();
                 }
@@ -184,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtongachi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -192,8 +204,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_gachi);
                     clint_sound.start();
                 }
@@ -202,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonhypers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -210,8 +221,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_hypers);
                     clint_sound.start();
                 }
@@ -220,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonfug.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -228,8 +238,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_fug);
                     clint_sound.start();
                 }
@@ -238,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonhands.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -246,8 +255,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_hands);
                     clint_sound.start();
                 }
@@ -256,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonyo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -264,8 +272,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_yo);
                     clint_sound.start();
                 }
@@ -274,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonlu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -282,8 +289,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_lu);
                     clint_sound.start();
                 }
@@ -292,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -300,8 +306,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_w);
                     clint_sound.start();
                 }
@@ -310,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonhd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -318,8 +323,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_hd);
                     clint_sound.start();
                 }
@@ -328,7 +332,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonsuave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -336,8 +340,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_suave);
                     clint_sound.start();
                 }
@@ -346,7 +349,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtongood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -354,8 +357,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_good);
                     clint_sound.start();
                 }
@@ -364,7 +366,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonthot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -372,8 +374,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_thot);
                     clint_sound.start();
                 }
@@ -382,7 +383,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonrare_peng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -390,8 +391,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_rare_peng);
                     clint_sound.start();
                 }
@@ -400,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonnerd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -408,8 +408,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_nerd);
                     clint_sound.start();
                 }
@@ -418,7 +417,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -426,8 +425,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_g);
                     clint_sound.start();
                 }
@@ -436,7 +434,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtoniq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -444,8 +442,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_iq);
                     clint_sound.start();
                 }
@@ -454,7 +451,7 @@ public class MainActivity extends AppCompatActivity {
         imageButtonr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(clint_sound != null && clint_sound.isPlaying()) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
@@ -462,8 +459,7 @@ public class MainActivity extends AppCompatActivity {
                             clint_sound.start();
                         }
                     });
-                }
-                else {
+                } else {
                     clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_re);
                     clint_sound.start();
                 }
@@ -476,7 +472,7 @@ public class MainActivity extends AppCompatActivity {
     // Function that stops all the current sounds
 
     public void stopSound(View v) {
-        if(clint_sound != null && clint_sound.isPlaying())  {
+        if (clint_sound != null && clint_sound.isPlaying()) {
             clint_sound.stop();
         }
 
