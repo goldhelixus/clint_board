@@ -11,17 +11,36 @@
         android:id="@+id/imageView_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@null"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_clint_background"
-        android:contentDescription="@null" />
+        app:srcCompat="@drawable/ic_clint_background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton_pause"
+            android:layout_width="210dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:background="@drawable/button_clint_pause"
+            android:contentDescription="@string/cd_pause"
+            android:onClick="stopSound" />
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -49,10 +68,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
+                    android:contentDescription="@string/cd_clint_second"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_2nd"
-                    android:contentDescription="@string/cd_clint_second" />
+                    app:srcCompat="@drawable/clint_2nd" />
 
                 <ImageButton
                     android:id="@+id/imageButton_ay"
@@ -60,8 +79,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_ay"
-                    android:contentDescription="@string/cd_clint_ay" />
+                    android:contentDescription="@string/cd_clint_ay"
+                    app:srcCompat="@drawable/clint_ay" />
 
                 <ImageButton
                     android:id="@+id/imageButton_b"
@@ -69,8 +88,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_b"
-                    android:contentDescription="@string/cd_clint_b" />
+                    android:contentDescription="@string/cd_clint_b"
+                    app:srcCompat="@drawable/clint_b" />
 
 
             </LinearLayout>
@@ -87,8 +106,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_baka"
-                    android:contentDescription="@string/cd_clint_baka" />
+                    android:contentDescription="@string/cd_clint_baka"
+                    app:srcCompat="@drawable/clint_baka" />
 
                 <ImageButton
                     android:id="@+id/imageButton_blind"
@@ -96,10 +115,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
+                    android:contentDescription="@string/cd_clint_blind"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_blind"
-                    android:contentDescription="@string/cd_clint_blind" />
+                    app:srcCompat="@drawable/clint_blind" />
 
                 <ImageButton
                     android:id="@+id/imageButton_bruh"
@@ -107,8 +126,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_bruh"
-                    android:contentDescription="@string/cd_clint_bruh" />
+                    android:contentDescription="@string/cd_clint_bruh"
+                    app:srcCompat="@drawable/clint_bruh" />
 
 
             </LinearLayout>
@@ -125,8 +144,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_c"
-                    android:contentDescription="@string/cd_clint_c" />
+                    android:contentDescription="@string/cd_clint_c"
+                    app:srcCompat="@drawable/clint_c" />
 
                 <ImageButton
                     android:id="@+id/imageButton_chep"
@@ -134,8 +153,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_chep"
-                    android:contentDescription="@string/cd_clint_chep" />
+                    android:contentDescription="@string/cd_clint_chep"
+                    app:srcCompat="@drawable/clint_chep" />
 
                 <ImageButton
                     android:id="@+id/imageButton_cozy"
@@ -143,8 +162,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_cozy"
-                    android:contentDescription="@string/cd_clint_cozy" />
+                    android:contentDescription="@string/cd_clint_cozy"
+                    app:srcCompat="@drawable/clint_cozy" />
 
 
             </LinearLayout>
@@ -161,8 +180,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_d"
-                    android:contentDescription="@string/cd_clint_d" />
+                    android:contentDescription="@string/cd_clint_d"
+                    app:srcCompat="@drawable/clint_d" />
 
                 <ImageButton
                     android:id="@+id/imageButton_fug"
@@ -170,10 +189,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
+                    android:contentDescription="@string/cd_clint_fug"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_fug"
-                    android:contentDescription="@string/cd_clint_fug" />
+                    app:srcCompat="@drawable/clint_fug" />
 
                 <ImageButton
                     android:id="@+id/imageButton_g"
@@ -181,10 +200,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
+                    android:contentDescription="@string/cd_clint_g"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_g"
-                    android:contentDescription="@string/cd_clint_g" />
+                    app:srcCompat="@drawable/clint_g" />
 
 
             </LinearLayout>
@@ -201,8 +220,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_gachi"
-                    android:contentDescription="@string/cd_clint_gachi" />
+                    android:contentDescription="@string/cd_clint_gachi"
+                    app:srcCompat="@drawable/clint_gachi" />
 
                 <ImageButton
                     android:id="@+id/imageButton_gasm"
@@ -210,8 +229,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_gasm"
-                    android:contentDescription="@string/cd_clint_gasm" />
+                    android:contentDescription="@string/cd_clint_gasm"
+                    app:srcCompat="@drawable/clint_gasm" />
 
                 <ImageButton
                     android:id="@+id/imageButton_good"
@@ -219,10 +238,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
+                    android:contentDescription="@string/cd_clint_good"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_good"
-                    android:contentDescription="@string/cd_clint_good" />
+                    app:srcCompat="@drawable/clint_good" />
 
 
             </LinearLayout>
@@ -239,8 +258,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_hands"
-                    android:contentDescription="@string/cd_clint_hands" />
+                    android:contentDescription="@string/cd_clint_hands"
+                    app:srcCompat="@drawable/clint_hands" />
 
                 <ImageButton
                     android:id="@+id/imageButton_hard"
@@ -248,8 +267,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_hard"
-                    android:contentDescription="@string/cd_clint_hard" />
+                    android:contentDescription="@string/cd_clint_hard"
+                    app:srcCompat="@drawable/clint_hard" />
 
                 <ImageButton
                     android:id="@+id/imageButton_hd"
@@ -257,8 +276,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_hd"
-                    android:contentDescription="@string/cd_clint_hd" />
+                    android:contentDescription="@string/cd_clint_hd"
+                    app:srcCompat="@drawable/clint_hd" />
 
 
             </LinearLayout>
@@ -275,8 +294,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_hi"
-                    android:contentDescription="@string/cd_clint_hi" />
+                    android:contentDescription="@string/cd_clint_hi"
+                    app:srcCompat="@drawable/clint_hi" />
 
                 <ImageButton
                     android:id="@+id/imageButton_hypers"
@@ -284,8 +303,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_hypers"
-                    android:contentDescription="@string/cd_clint_hypers" />
+                    android:contentDescription="@string/cd_clint_hypers"
+                    app:srcCompat="@drawable/clint_hypers" />
 
                 <ImageButton
                     android:id="@+id/imageButton_iq"
@@ -293,8 +312,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_iq"
-                    android:contentDescription="@string/cd_clint_iq" />
+                    android:contentDescription="@string/cd_clint_iq"
+                    app:srcCompat="@drawable/clint_iq" />
 
 
             </LinearLayout>
@@ -311,8 +330,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_l"
-                    android:contentDescription="@string/cd_clint_l" />
+                    android:contentDescription="@string/cd_clint_l"
+                    app:srcCompat="@drawable/clint_l" />
 
                 <ImageButton
                     android:id="@+id/imageButton_lewd"
@@ -320,8 +339,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_lewd"
-                    android:contentDescription="@string/cd_clint_lewd" />
+                    android:contentDescription="@string/cd_clint_lewd"
+                    app:srcCompat="@drawable/clint_lewd" />
 
                 <ImageButton
                     android:id="@+id/imageButton_love"
@@ -329,8 +348,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_love"
-                    android:contentDescription="@string/cd_clint_love" />
+                    android:contentDescription="@string/cd_clint_love"
+                    app:srcCompat="@drawable/clint_love" />
 
 
             </LinearLayout>
@@ -347,8 +366,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_lu"
-                    android:contentDescription="@string/cd_clint_lu" />
+                    android:contentDescription="@string/cd_clint_lu"
+                    app:srcCompat="@drawable/clint_lu" />
 
                 <ImageButton
                     android:id="@+id/imageButton_nerd"
@@ -356,10 +375,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
+                    android:contentDescription="@string/cd_clint_nerd"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_nerd"
-                    android:contentDescription="@string/cd_clint_nerd" />
+                    app:srcCompat="@drawable/clint_nerd" />
 
                 <ImageButton
                     android:id="@+id/imageButton_no"
@@ -367,8 +386,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_no"
-                    android:contentDescription="@string/cd_clint_no" />
+                    android:contentDescription="@string/cd_clint_no"
+                    app:srcCompat="@drawable/clint_no" />
 
 
             </LinearLayout>
@@ -385,8 +404,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_o"
-                    android:contentDescription="@string/cd_clint_o" />
+                    android:contentDescription="@string/cd_clint_o"
+                    app:srcCompat="@drawable/clint_o" />
 
                 <ImageButton
                     android:id="@+id/imageButton_oh"
@@ -394,8 +413,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_oh"
-                    android:contentDescription="@string/cd_clint_oh" />
+                    android:contentDescription="@string/cd_clint_oh"
+                    app:srcCompat="@drawable/clint_oh" />
 
                 <ImageButton
                     android:id="@+id/imageButton_p"
@@ -403,8 +422,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_p"
-                    android:contentDescription="@string/cd_clint_p" />
+                    android:contentDescription="@string/cd_clint_p"
+                    app:srcCompat="@drawable/clint_p" />
 
 
             </LinearLayout>
@@ -421,8 +440,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_peng"
-                    android:contentDescription="@string/cd_clint_peng" />
+                    android:contentDescription="@string/cd_clint_peng"
+                    app:srcCompat="@drawable/clint_peng" />
 
                 <ImageButton
                     android:id="@+id/imageButton_god_peng"
@@ -430,8 +449,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_god_peng"
-                    android:contentDescription="@string/cd_clint_god_peng" />
+                    android:contentDescription="@string/cd_clint_god_peng"
+                    app:srcCompat="@drawable/clint_god_peng" />
 
                 <ImageButton
                     android:id="@+id/imageButton_rare_peng"
@@ -439,8 +458,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_rare_peng"
-                    android:contentDescription="@string/cd_clint_rare_peng" />
+                    android:contentDescription="@string/cd_clint_rare_peng"
+                    app:srcCompat="@drawable/clint_rare_peng" />
 
 
             </LinearLayout>
@@ -457,10 +476,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
+                    android:contentDescription="@string/cd_clint_r"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_r"
-                    android:contentDescription="@string/cd_clint_r" />
+                    app:srcCompat="@drawable/clint_r" />
 
                 <ImageButton
                     android:id="@+id/imageButton_re"
@@ -468,8 +487,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_re"
-                    android:contentDescription="@string/cd_clint_re" />
+                    android:contentDescription="@string/cd_clint_re"
+                    app:srcCompat="@drawable/clint_re" />
 
                 <ImageButton
                     android:id="@+id/imageButton_s"
@@ -477,10 +496,10 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
+                    android:contentDescription="@string/cd_clint_s"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/clint_s"
-                    android:contentDescription="@string/cd_clint_s" />
+                    app:srcCompat="@drawable/clint_s" />
 
 
             </LinearLayout>
@@ -497,8 +516,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint_unused"
-                    app:srcCompat="@drawable/clint_smug"
-                    android:contentDescription="@string/cd_clint_smug" />
+                    android:contentDescription="@string/cd_clint_smug"
+                    app:srcCompat="@drawable/clint_smug" />
 
                 <ImageButton
                     android:id="@+id/imageButton_soft"
@@ -506,8 +525,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_soft"
-                    android:contentDescription="@string/cd_clint_soft" />
+                    android:contentDescription="@string/cd_clint_soft"
+                    app:srcCompat="@drawable/clint_soft" />
 
                 <ImageButton
                     android:id="@+id/imageButton_suave"
@@ -515,8 +534,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_suave"
-                    android:contentDescription="@string/cd_clint_suave" />
+                    android:contentDescription="@string/cd_clint_suave"
+                    app:srcCompat="@drawable/clint_suave" />
 
 
             </LinearLayout>
@@ -533,8 +552,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_t"
-                    android:contentDescription="@string/cd_clint_t" />
+                    android:contentDescription="@string/cd_clint_t"
+                    app:srcCompat="@drawable/clint_t" />
 
                 <ImageButton
                     android:id="@+id/imageButton_thot"
@@ -542,8 +561,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_thot"
-                    android:contentDescription="@string/cd_clint_thot" />
+                    android:contentDescription="@string/cd_clint_thot"
+                    app:srcCompat="@drawable/clint_thot" />
 
                 <ImageButton
                     android:id="@+id/imageButton_v"
@@ -551,8 +570,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_v"
-                    android:contentDescription="@string/cd_clint_v" />
+                    android:contentDescription="@string/cd_clint_v"
+                    app:srcCompat="@drawable/clint_v" />
 
 
             </LinearLayout>
@@ -569,8 +588,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_w"
-                    android:contentDescription="@string/cd_clint_w" />
+                    android:contentDescription="@string/cd_clint_w"
+                    app:srcCompat="@drawable/clint_w" />
 
 
                 <ImageButton
@@ -579,8 +598,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_weeb"
-                    android:contentDescription="@string/cd_clint_weeb" />
+                    android:contentDescription="@string/cd_clint_weeb"
+                    app:srcCompat="@drawable/clint_weeb" />
 
                 <ImageButton
                     android:id="@+id/imageButton_x"
@@ -588,8 +607,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_x"
-                    android:contentDescription="@string/cd_clint_x" />
+                    android:contentDescription="@string/cd_clint_x"
+                    app:srcCompat="@drawable/clint_x" />
 
             </LinearLayout>
 
@@ -605,17 +624,8 @@
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
                     android:background="@drawable/button_clint"
-                    app:srcCompat="@drawable/clint_yo"
-                    android:contentDescription="@string/cd_clint_yo" />
-
-                <ImageButton
-                    android:id="@+id/imageButton_pause"
-                    android:layout_width="210dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="25dp"
-                    android:background="@drawable/button_clint_pause"
-                    android:onClick="stopSound"
-                    android:contentDescription="@string/cd_pause" />
+                    android:contentDescription="@string/cd_clint_yo"
+                    app:srcCompat="@drawable/clint_yo" />
 
 
             </LinearLayout>
