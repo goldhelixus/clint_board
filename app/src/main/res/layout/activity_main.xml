@@ -385,7 +385,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_clint"
+                    android:background="@drawable/button_clint_unused"
                     android:contentDescription="@string/cd_clint_no"
                     app:srcCompat="@drawable/clint_no" />
 
@@ -495,7 +495,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_clint_unused"
+                    android:background="@drawable/button_clint"
                     android:contentDescription="@string/cd_clint_s"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
