@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imageButtond = this.findViewById(R.id.imageButton_d);
         ImageButton imageButtonhard = this.findViewById(R.id.imageButton_hard);
         ImageButton imageButtonp = this.findViewById(R.id.imageButton_p);
+        ImageButton imageButtonlove = this.findViewById(R.id.imageButton_love);
+        ImageButton imageButtonno = this.findViewById(R.id.imageButton_no);
+        ImageButton imageButtono = this.findViewById(R.id.imageButton_o);
 
         /*
             On Click Listeners that have nested On Completion Listener
@@ -58,6 +61,60 @@ public class MainActivity extends AppCompatActivity {
             the audio to the MediaPlayer and play. This makes it so we
             don't have to have a separate function to remount MediaPlayers.
         */
+        imageButtono.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
+                    clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_o);
+                            clint_sound.start();
+                        }
+                    });
+                } else {
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_o);
+                    clint_sound.start();
+
+                }
+            }
+        });
+        imageButtonno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
+                    clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_no);
+                            clint_sound.start();
+                        }
+                    });
+                } else {
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_no);
+                    clint_sound.start();
+
+                }
+            }
+        });
+        imageButtonlove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
+                    clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_love);
+                            clint_sound.start();
+                        }
+                    });
+                } else {
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_love);
+                    clint_sound.start();
+
+                }
+            }
+        });
         imageButtonp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
