@@ -329,7 +329,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="25dp"
-                    android:background="@drawable/button_clint_unused"
+                    android:background="@drawable/button_clint"
                     android:contentDescription="@string/cd_clint_l"
                     app:srcCompat="@drawable/clint_l" />
 
