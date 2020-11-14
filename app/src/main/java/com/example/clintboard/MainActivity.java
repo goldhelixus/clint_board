@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imageButtonb = this.findViewById(R.id.imageButton_b);
         ImageButton imageButtongasm = this.findViewById(R.id.imageButton_gasm);
         ImageButton imageButtonbaka = this.findViewById(R.id.imageButton_baka);
+        ImageButton imageButtonre = this.findViewById(R.id.imageButton_re);
 
 
         /*
@@ -69,6 +70,24 @@ public class MainActivity extends AppCompatActivity {
             the audio to the MediaPlayer and play. This makes it so we
             don't have to have a separate function to remount MediaPlayers.
         */
+        imageButtonre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
+                    clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_re);
+                            clint_sound.start();
+                        }
+                    });
+                } else {
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_re);
+                    clint_sound.start();
+
+                }
+            }
+        });
         imageButtonbaka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -741,12 +760,12 @@ public class MainActivity extends AppCompatActivity {
                     clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
-                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_re);
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_r);
                             clint_sound.start();
                         }
                     });
                 } else {
-                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_re);
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_r);
                     clint_sound.start();
                 }
             }
