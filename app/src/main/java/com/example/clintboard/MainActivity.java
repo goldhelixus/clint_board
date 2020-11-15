@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imageButtonre = this.findViewById(R.id.imageButton_re);
         ImageButton imageButtongodpeng = this.findViewById(R.id.imageButton_god_peng);
         ImageButton imageButtonay = this.findViewById(R.id.imageButton_ay);
+        ImageButton imageButtoncozy = this.findViewById(R.id.imageButton_cozy);
 
 
         /*
@@ -72,6 +73,24 @@ public class MainActivity extends AppCompatActivity {
             the audio to the MediaPlayer and play. This makes it so we
             don't have to have a separate function to remount MediaPlayers.
         */
+        imageButtoncozy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clint_sound != null && clint_sound.isPlaying()) {
+                    clint_sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_cozy);
+                            clint_sound.start();
+                        }
+                    });
+                } else {
+                    clint_sound = MediaPlayer.create(MainActivity.this, R.raw.clint_cozy);
+                    clint_sound.start();
+
+                }
+            }
+        });
         imageButtonay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
