@@ -48,4 +48,5 @@
     <string name="cd_clint_x">clint x</string>
     <string name="cd_clint_yo">clint yo</string>
     <string name="cd_pause">pause</string>
+    <string name="message">This button is being saved for a specific soundbyte, and will remain empty till found.</string>
 </resources>

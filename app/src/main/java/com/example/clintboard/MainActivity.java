@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imageButtoncozy = this.findViewById(R.id.imageButton_cozy);
         ImageButton imageButtonhi = this.findViewById(R.id.imageButton_hi);
         ImageButton imageButtonpeng = this.findViewById(R.id.imageButton_peng);
+        ImageButton imageButtonblind = this.findViewById(R.id.imageButton_blind);
 
 
         /*
@@ -75,6 +77,13 @@ public class MainActivity extends AppCompatActivity {
             the audio to the MediaPlayer and play. This makes it so we
             don't have to have a separate function to remount MediaPlayers.
         */
+        imageButtonblind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(MainActivity.this, R.string.message,Toast.LENGTH_LONG);
+                toast.show();
+            }
+        });
         imageButtonpeng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
